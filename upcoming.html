@@ -11,6 +11,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/Logomini-Amazing-Events.ico" />
@@ -20,41 +21,65 @@
       <img class="logo" src="assets/Logo Amazing Events.png" />
 
       <ul>
-        <li><a  href="stats.html">Stats</a></li>
-        <li><a  href="contact.html">Contact</a></li>
-        <li><a  href="past.html">Past Events</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="past.html">Past Events</a></li>
         <li><a class="current-page" href="#">Upcoming Events</a></li>
-        <li><a  href="home.html">Home</a></li>
+        <li><a href="home.html">Home</a></li>
       </ul>
     </header>
     <main>
       <section class="carousel">
-        <button type="button" class="btn btn-outline-dark"><a href="home.html">Home</a></button>
+        <button type="button" class="btn btn-outline-dark">
+          <a href="home.html"> <span id="boot-icon" class="bi bi-arrow-left-circle" style="font-size: 25px"></span></a>
+        </button>
         <h1>UPCOMING EVENTS</h1>
-        <button type="button" class="btn btn-outline-dark"><a href="past.html">Past events</a></button>
+        <button type="button" class="btn btn-outline-dark">
+          <a href="past.html"> <span id="boot-icon" class="bi bi-arrow-right-circle" style="font-size: 25px"></span></a>
+        </button>
       </section>
-      <div class="searchBar">
-        <form action="..." method="...">
-          <fieldset>
-            <input type="checkbox" id="cat" name="cat" />
-            <label for="cat">category</label>
-            <input type="checkbox" id="cat" name="cat" />
-            <label for="cat">category</label>
-            <input type="checkbox" id="cat" name="cat" />
-            <label for="cat">category</label>
-            <input type="checkbox" id="cat" name="cat" />
-            <label for="cat">category</label>
-            <input type="checkbox" id="cat" name="cat" />
-            <label for="cat">category</label>
-            <input class="searchBarInput" type="text" placeholder="what are you looking for?" />
-          </fieldset>
-        </form>
-      </div>
-      <div class="card-deck" id="card">
-   
-  </div>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-7 offset-md-3">
+            <form id="form">
+              <div class="form-group" id="searchBar">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Book Exchange" />
+                  <label class="form-check-label" for="Book Exchange">Book Exchange</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Cinema" />
+                  <label class="form-check-label" for="Cinema">Cinema</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Costume Party" />
+                  <label class="form-check-label" for="Costume Party">Costume Party</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Food Fair" />
+                  <label class="form-check-label" for="Food Fair">Food Fair</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Museum" />
+                  <label class="form-check-label" for="Museum">Museum</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Music Concert" />
+                  <label class="form-check-label" for="Music Concert">Music Concert</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Race" />
+                  <label class="form-check-label" for="Race">Race</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="searchInput" />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
+      <div class="card-deck" id="card"></div>
     </main>
     <footer>
       <div class="social">
@@ -68,7 +93,7 @@
           <span> <i class="fa-brands fa-whatsapp"></i> </span> <span></span>
         </button>
       </div>
-            <h3>Cohort 48 - Ruggia Adrian</h3>
+      <h3>Cohort 48 - Ruggia Adrian</h3>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
